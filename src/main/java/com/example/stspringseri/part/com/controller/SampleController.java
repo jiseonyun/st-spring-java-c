@@ -24,6 +24,7 @@ public class SampleController {
 
     @GetMapping
     public String test() {
+        System.out.println("Sample Start");
         // call case 1 ==> X
 //        SampleService service = new SampleService();
 
@@ -37,6 +38,7 @@ public class SampleController {
         // call case 4
         service4.test();
 
+        System.out.println("Sample End");
         return "good job";
     }
 }
